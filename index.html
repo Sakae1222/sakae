@@ -1,149 +1,48 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="zh-CN">
 <head>
-<meta charset="utf-8">
-<title>これから、プログラミングを勉強します</title>
-<base href="https://expo.sc-aos.co.jp/wp-content/themes/aos_expo/assets/img/index/logo.png" target="_blank">
+  <meta charset="UTF-8">
+  <title>来自A的问候</title>
+  <style>
+    body {
+      background-color: #fff0f6;
+      font-family: "Arial", sans-serif;
+      text-align: center;
+      padding-top: 100px;
+    }
+    h1 {
+      color: #d6336c;
+    }
+    button {
+      background-color: #f06595;
+      color: white;
+      border: none;
+      padding: 15px 30px;
+      font-size: 18px;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    button:hover {
+      background-color: #c2255c;
+    }
+    #message {
+      margin-top: 30px;
+      font-size: 22px;
+      color: #495057;
+      display: none;
+    }
+  </style>
 </head>
+<body>
+  <h1>小宝今天也辛苦啦...</h1>
+  <button onclick="confess()">点我一下</button>
+  <div id="message">今晚要不要一起去买菜？💗</div>
 
-<div id="container">
-
-    <div id="header" style="background-color:#f1f1f1;">
-        <p><a href="https://expo.sc-aos.co.jp/">
-        <img src="logo.png" alt="logo" width="300" height="50"></a></p>
-</div>
-
-<!--タイトル-->
-<h1 style="font-family:arial;color:#255359;font-size:30px;text-align:center;";>
-株式会社<abbr title="Authority On Security">AOS</abbr>&nbsp;&nbsp;&nbsp;万博警備スタッフ募集</h1>
-
-
-<!--本文-->
-<hr/>
-<p>日本語もできますね<br>ワクワクしてきた<br>すごいですね<br><b>プログラミング</b>って</P>
-<hr/>
-
-<br/>
-<p>以下は<a href="https://expo.sc-aos.co.jp/"rel="noopener"style="text-decoration:none;">AOSの万博特設サイト</a>の<del>top</del><ins>トップ</ins>写真です。</p>
-<p><img src="https://expo.sc-aos.co.jp/wp-content/themes/aos_expo/assets/img/index/img_kv_01.png" width="600" height="340"/></p>
-
-<hr>
-<hr>
-
-<h3>仕事紹介</h3>
-<dl>
-    <dt><b>施設警備</b></dt>
-    <dd>-会場やパビリオンなどにおいて主に出入管理や点検、監視を行うお仕事です。手堅さが求められます。</dd>
-    <dt><b>手荷物検査</b></dt>
-    <dd>-お客様の手荷物を検査する仕事です。丁寧な対応をお願いします。</dd>
-    <dt><b>パビリオン関連の警備</b></dt>
-    <dd>-パビリオン</dd>
-    <dt><b>イベント関連</b></dt>
-    <dd>-集まったお客様の案内や誘導、列の整理を行うお仕事です。案内広報などはノリのいい人に向いているかも。</dd>
-    <dt><b>交通誘導警備</b></dt>
-    <dd>-車の案内や誘導のお仕事です。体を動かしたい方、丁寧なことが苦手な方はこちらがおすすめ。</dd>
-    <dt><b>その他関西のお仕事</b></dt>
-    <dd>-その他、交通機関などにおいても多数のお仕事あり。確定次第ご案内します。</dd>
-</dl>
-
-<hr>
-<hr>
-<br>
-
-<table border="1" bordercolor="#f1f1f1">
-    <caption><b>勤務時間表（想定）</b></caption>
-    <tbody>
-    <thead>   
-         <th>配置場所</th>
-         </th> <th colspan="2">勤務時間</th>
-    </thead> 
-        <tr>
-            <td>駐車場</td>
-            <td>7:00~15:00</td>
-            <td>15:00~23:00</td>
-        </tr>
-        <tr>
-            <td>イベント関連</td>
-            <td>8:00~16:00</td>
-            <td>16:00~23:00</td>
-        </tr>
-        <tr>
-            <td>手荷物検査</td>
-            <td>8:00~18:00</td>
-            <td>&nbsp;</td>
-        </tr>
-        <tr>
-            <td>施設警備</td>
-            <td>9:00~21:00</td>
-            <td>21:00~翌9:00</td>
-         </tr>   
-    </tbody>
-</table>
-
-<br>
-<hr>
-<hr>
-
-
-<h4>面接時の持ち物リスト</h4>
-<ul style="list-style-type:square">
-    <li>顔写真付き履歴書</li>
-    <li>資格を証明できるもの</li>
-    <ul>
-        <li>警備業務検定の資格証</li>
-        <li>語学資格の証明書</li>
-    </ul>
-    <li>筆記用具</li>
-</ul>
-
-<hr>
-<hr>
-<br>
-
-<form action="/" method="post">
-    <label for="name">ID:</label>
-    <input type="text" id="name" name="name" required>
-
-    <br>
-
-    <label for="password">PW:</label>
-    <input type="password" id="password" name="password" required>
-
-    <br>
-
-    <label>性別</label>
-    <input type="radio" id="female" name="gender" value="female" checked>
-    <label for="female">女</label>
-    <input type="radio" id="male" name="gender" value="male">
-    <label for="male">男</label>
-
-    <br>
-
-    <input type="checkbox" id="subscribe" name="subscribe" checked>
-    <label for="subscribe">メールマガジン</label>
-
-    <br>
-
-    <lebal for="country">国籍</lebal>
-    <select id="country" name="country">
-        <option value="cn">中国</option>
-        <option value="jp">日本</option>
-        <option value="usa">米国</option>
-        <option value="uk">英国</option>
-    </select>
-
-    <br>
-    
-    <input type="submit" value="提出">
-</form>
-
-
-
-
-<p>メールアドレス:<a href="mailto:expo@kk-aos.jp"target="_top">expo@kk-aos.jp</a></p>
-
-
-
-
+  <script>
+    function confess() {
+      document.getElementById("message").style.display = "block";
+    }
+  </script>
 </body>
 </html>
